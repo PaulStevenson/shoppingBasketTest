@@ -20,4 +20,12 @@ public class Basket {
     public void remove(Item item) {
         basketList.remove(item);
     }
+
+    public int calculateTotalBasketCost() {
+        int total = 0;
+        for (Item price : basketList){
+            total += price.getPrice();
+        }
+        return total;
+    }
 }
