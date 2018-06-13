@@ -16,7 +16,6 @@ public class Baskettest {
         basketList = new Basket();
         item = new Item("item1", 12, 1, true);
         item2 = new Item("item2", 10, 1, false);
-
     }
 
     @Test
@@ -42,6 +41,5 @@ public class Baskettest {
         basketList.add(item);
         basketList.add(item2);
         assertEquals(22, basketList.calculateTotalBasketCost());
-
     }
 }

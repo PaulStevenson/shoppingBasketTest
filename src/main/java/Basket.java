@@ -23,8 +23,8 @@ public class Basket {
 
     public int calculateTotalBasketCost() {
         int total = 0;
-        for (Item price : basketList){
-            total += price.getPrice();
+        for (Item itemPrice : basketList){
+            total += itemPrice.getPrice();
         }
         return total;
     }
