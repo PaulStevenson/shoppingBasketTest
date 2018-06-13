@@ -30,7 +30,7 @@ public class ItemTest {
 
     @Test
     public void canSetQuantity(){
-        assertEquals(2, item.setQuantity());
+        assertEquals(2, item.setQuantity(2));
     }
 
     @Test

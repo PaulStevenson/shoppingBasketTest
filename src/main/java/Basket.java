@@ -3,9 +3,10 @@ import java.util.ArrayList;
 public class Basket {
 
     private ArrayList<Item> basketList;
+    private Item item;
 
     public Basket(){
-        basketList = new ArrayList<>();
+        this.basketList = new ArrayList<>();
     }
 
     public int count() {
@@ -28,4 +29,14 @@ public class Basket {
         }
         return total;
     }
+
+//    public int increaseQuantityforBOGOF() {
+//
+//        if (item.getBogof() == true) {
+//            item.setQuantity(2);
+//        }
+//
+//        return item.getQuantity();
+//    }
+
 }

@@ -42,4 +42,12 @@ public class Baskettest {
         basketList.add(item2);
         assertEquals(22, basketList.calculateTotalBasketCost());
     }
+
+//    @Test
+//    public void increaseQuantityforBOGOF(){
+//        basketList.add(item);
+//        assertEquals(2, basketList.increaseQuantityforBOGOF());
+//    }
+
+    
 }

@@ -25,7 +25,7 @@ public class Item {
         return quantity;
     }
 
-    public int setQuantity() {
+    public int setQuantity(int i) {
         return this.quantity = 2;
     }
 
