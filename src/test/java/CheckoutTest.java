@@ -11,13 +11,14 @@ public class CheckoutTest {
     Basket basketList;
     Item item;
     Item item2;
+    Discount discount;
 
     @Before
     public void before(){
-        checkout = new Checkout(true);
         basketList = new Basket();
         item = new Item("item1", 12, 1, true);
         item2 = new Item("item2", 10, 1, false);
+        discount = new Discount(true, 0.1);
     }
 
     @Test
@@ -38,15 +39,7 @@ public class CheckoutTest {
         assertEquals(0, basketList.count());
     }
 
-    @Test
-    public void canGetMemebershipDiscount(){
-        assertEquals(true, checkout.getMembershipDiscount());
-    }
 
-    @Test
-    public void canSetMemebershipDiscount(){
-        assertEquals(false, checkout.setMembershipDiscount());
-    }
 
 
 

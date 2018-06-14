@@ -4,22 +4,18 @@ import java.util.ArrayList;
 
 public class Checkout {
 
-    private boolean membershipDiscount;
+
     private Basket basket;
     private Item item;
+    private Discount discount;
 
-    public Checkout(boolean membershipDiscount){
-        this.membershipDiscount = membershipDiscount;
+
+    public Checkout(){
+
     }
 
 
-    public boolean getMembershipDiscount() {
-        return membershipDiscount;
-    }
 
-    public boolean setMembershipDiscount() {
-        return this.membershipDiscount = false;
-    }
 
 
 
