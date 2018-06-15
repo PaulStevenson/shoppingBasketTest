@@ -11,13 +11,9 @@ public class Checkout {
 
 
     public Checkout(){
-
+        this.basket = new Basket();
+        
     }
-
-
-
-
-
 
 
 }

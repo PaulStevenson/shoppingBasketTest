@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Basket {
 
     private ArrayList<Item> basketList;
-    private Item item;
+
 
     public Basket(){
         this.basketList = new ArrayList<>();
@@ -13,7 +13,6 @@ public class Basket {
         return basketList.size();
     }
 
-
     public void add(Item item) {
         basketList.add(item);
     }
@@ -22,13 +21,24 @@ public class Basket {
         basketList.remove(item);
     }
 
-    public int calculateTotalBasketCost() {
-        int total = 0;
+    public double calculateTotalBasketCost() {
+        double total = 0;
         for (Item itemPrice : basketList){
             total += itemPrice.getPrice();
         }
         return total;
     }
+
+
+
+
+//    public String getMultipleItemNames() {
+//
+//        for (Item itemName : basketList){
+//            itemName.getName();
+//        }
+//        return item.getName();
+//    }
 
 //    public int increaseQuantityforBOGOF() {
 //

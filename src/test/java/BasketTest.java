@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
-public class Baskettest {
+public class BasketTest {
 
     Basket basketList;
     Item item;
@@ -40,8 +40,16 @@ public class Baskettest {
     public void calculateTotalPriceInBasket(){
         basketList.add(item);
         basketList.add(item2);
-        assertEquals(22, basketList.calculateTotalBasketCost());
+        assertEquals(22, basketList.calculateTotalBasketCost(), 0.01);
     }
+
+//    @Test
+//    public void canGetNameOfTwoItemsInBasket(){
+//        basketList.add(item);
+//        basketList.add(item2);
+//        assertEquals("item1",  basketList.getMultipleItemNames());
+//        assertEquals("item2",  basketList.getMultipleItemNames());
+//    }
 
 //    @Test
 //    public void increaseQuantityforBOGOF(){
